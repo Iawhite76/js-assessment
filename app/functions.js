@@ -3,12 +3,12 @@ if (typeof define !== 'function') { var define = require('amdefine')(module); }
 define(function() {
   return {
     argsAsArray : function(fn, arr) {
-        # best solution???
+        // best solution??
         return fn(arr[0], arr[1], arr[2]);
     },
 
     speak : function(fn, obj) {
-
+        console.log(fn);
     },
 
     functionFunction : function(str) {
