@@ -5,7 +5,7 @@ define(function () {
     count : function (start, end) {
       var count=start;
 
-      var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
+      var counter = setInterval(timer, 100); //100 will  run it every 1/10th of a second
 
       function timer()
           {
@@ -16,10 +16,10 @@ define(function () {
                //counter ended, do something here
                return;
             } else {
-                 console.log(count);
+                 return console.log(count);
               }
              //Do code for showing the number of seconds here
-            }
+          }
     }
   };
 });

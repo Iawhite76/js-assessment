@@ -34,7 +34,7 @@ define([
             name : 'Rebecca'
           };
 
-      var result = answers.speak(speak, obj);
+      var result = answers.speaker(speak, obj);
       expect(result).to.eql('Hello, Rebecca!!!');
       expect(sayItCalled).to.be.ok;
     });

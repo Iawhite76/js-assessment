@@ -4,12 +4,16 @@ define(function() {
   return {
     argsAsArray : function(fn, arr) {
         // best solution??
-        return fn(arr[0], arr[1], arr[2]);
+        // return fn(arr[0], arr[1], arr[2]);
+
+        // using apply function
+        return fn.apply(this, arr);
     },
 
-    speak : function(fn, obj) {
-        console.log(fn);
-        return fn(speak());
+    speaker : function(fn, obj) {
+        // console.log(fn);
+        obj.fn = fn;
+        return obj.fn();
     },
 
     functionFunction : function(str) {
