@@ -89,7 +89,26 @@ define(function() {
     },
 
     findAllOccurrences : function(arr, target) {
-        return arr;
-    }
+    //   locations = []
+
+    //   locations.push(arr.indexOf(target));
+    //   locations.push(arr.lastIndexOf(target));
+
+    //   return locations
+    // }
+
+    locations = []
+
+     for (var i = 0, len = arr.length; i < len; i ++) {
+       if (arr[i] !== target) {
+       delete arr[i];
+       } else {
+        locations.push(arr.indexOf(target));
+        delete arr[i];
+          }
+        }
+       return locations
+       }
+
   };
 });
