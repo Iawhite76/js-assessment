@@ -81,7 +81,11 @@ define(function() {
     },
 
     square : function(arr) {
-         return arr;
+        sqValues = []
+        for (var i = 0, len = arr.length; i < len; i ++) {
+          sqValues.push(arr[i] * arr[i]);
+         }
+        return sqValues;
     },
 
     findAllOccurrences : function(arr, target) {
