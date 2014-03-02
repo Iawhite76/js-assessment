@@ -9,6 +9,7 @@ define(function() {
 
     speak : function(fn, obj) {
         console.log(fn);
+        return fn(speak());
     },
 
     functionFunction : function(str) {
