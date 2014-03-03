@@ -13,11 +13,13 @@ define(function() {
     },
 
     containsRepeatingLetter : function(str) {
-
+        var patt = /([a-zA-Z]).*?\1/
+        return patt.test(str);
     },
 
     endsWithVowel : function(str) {
-
+        var patt = /[aeiou]$/i
+        return patt.test(str);
     },
 
     captureThreeNumbers : function(str) {
