@@ -23,7 +23,13 @@ define(function() {
     },
 
     captureThreeNumbers : function(str) {
-
+        var patt = /[1-9]{3}/
+        var result = str.match(patt);
+        if (result) {
+            return result[0];
+        } else {
+            return false;
+        }
     },
 
     matchesPattern : function(str) {
