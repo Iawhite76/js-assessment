@@ -87,6 +87,17 @@ define(function() {
            }
         }
          return results;
+         // Taaha solution
+         // var sort = arr.sort();
+         // var results = []
+
+         // for (var i = 0, len = arr.length - 1; i < len; i++) {
+         //  if (sort[i] == sort[i + 1] && results.indexOf(arr[i]) == -1) {
+         //      results.push(sort[i]);
+         //    }
+         //  }
+         //  return results
+         // }
     },
 
     square : function(arr) {
@@ -105,6 +116,8 @@ define(function() {
 
     //   return locations
     // }
+
+
 
     locations = []
 
