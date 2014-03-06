@@ -104,18 +104,23 @@ define(function() {
         sqValues = []
         for (var i = 0, len = arr.length; i < len; i ++) {
           sqValues.push(arr[i] * arr[i]);
+          // Drew's solution
+          // sqValues.push(Math.pow(arr[i], 2));
          }
         return sqValues;
     },
 
     findAllOccurrences : function(arr, target) {
-    //   locations = []
 
-    //   locations.push(arr.indexOf(target));
-    //   locations.push(arr.lastIndexOf(target));
 
-    //   return locations
+    // Drew's solution
+    // var newArr = []
+    // for (var i = arr.length - 1; i >= 0, i --) {
+    //     if (arr[i] === target) {
+    //         newArr.push(i);
+    //     }
     // }
+    // return newArr;
 
 
 
@@ -130,7 +135,7 @@ define(function() {
           }
         }
        return locations
-       }
+           }
 
   };
 });
